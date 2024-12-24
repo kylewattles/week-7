@@ -5,8 +5,17 @@ const - a variable that cant change
 ---------------------------------------------
 arrays-
 
-arrays are 0 based '( starts at 0) 
+arrays are 0 based ( starts at 0)
 
+creating a repo in github-
+
+1. .gitignore is for files that we dont want to go to github
+
+2. put node_modules into .gitignore file
+
+3. copy and paste the sequence of commands from github repo page
+
+4. use git add . . git commit -m "with a comment" and git push to add files to github
 ----------------------------------------------
 questions
 --------------------------------------------
