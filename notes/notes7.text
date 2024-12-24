@@ -1,0 +1,13 @@
+const - a variable that cant change
+
+
+
+---------------------------------------------
+arrays-
+
+arrays are 0 based '( starts at 0) 
+
+----------------------------------------------
+questions
+--------------------------------------------
+why is nameLengths not defined aven though it is defined as an array up above it?
