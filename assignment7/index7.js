@@ -134,9 +134,9 @@ console.log(fullName("Kyle", "Wattles" ));
 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.*/
 
 const numbersArray = [28, 42, 69,]
-function isSumGreaterThanOneHundred[]{
+function isSumGreaterThanOneHundred([]){
     
-} 
+}
 
 
 
