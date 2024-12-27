@@ -214,7 +214,7 @@ console.log(gonnaBuyChocolate);
 }
 willBuyChocolate(20.00, true, false, 9)
 
-const defendFromLegKick = (incomingLegKick, reactionTime) => {
+const defendFromLegKick = (incomingLegKick) => {
     let checkKick = incomingLegKick === true
     console.log(checkKick, "check that leg kick");
      
