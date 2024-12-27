@@ -114,14 +114,12 @@ for (let i = 0; i < nameLengths.length; i++){
 /*
 7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').*/
 
-function santaClaus (word, n){
-    console.log(word, n)
-   let concat = word.repeat(n)
+function sayHello (hello, num){
+   let concat = hello.repeat(num)
    console.log(concat);
-   
 }
- santaClaus("Ho!", 3);  
- 
+ sayHello("Hello ",3);
+  
  /*
  8. Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.*/ 
 
@@ -133,18 +131,93 @@ console.log(fullName("Kyle", "Wattles" ));
 /*
 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.*/
 
-const numbersArray = [28, 42, 69,]
-function isSumGreaterThanOneHundred([]){
+const numbersArray = [28, 42, 69,];
+numbersArray.push(43)
+const sumOfArray = (array) => {
+    let sum = 0; 
+    for(let item of array){
+    sum += item
+    }
+    if (sum>100){
+        return true;
+    } 
+    return false;
+}
+console.log(sumOfArray(numbersArray))
+
+/*10. Write a function that takes an array of numbers and returns the average of all the elements in the array.*/
+
+const arrayOfNumbers = [52, 83, 98]
+const averageArray = (array) =>{
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum / array.length;
+}
+const avg = averageArray(arrayOfNumbers)
+console.log(avg);
+
+/*
+11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+*/
+
+const numberArray1 = [54, 348, 666, 68]
+const numberArray2 = [793, 252, 1, 85]
+const whichArrayIsMeaner = (numberArray1, numberArray2) => {
+
+    let sum1 = 0;
+    let sum2 = 0;
+for (const number of numberArray1) {
+    sum1 += number
+    console.log("current number", number, "sum",  sum1);
+    
+    }
+
+    for (const number of numberArray2) {
+        sum2 += number
+        console.log("current number",number,"sum", sum2);
+    }
+    let avg1 = sum1 / numberArray1.length
+    let avg2 = sum2 / numberArray2.length
+    console.log("averages", avg1, avg2);
+    if (avg1 > avg2){
+        console.log(true);
+        return true
+    } else if (avg1 < avg2){
+        console.log(false);
+    }else{
+        console.log("arrays are equal");
+        
+    }
     
 }
 
+whichArrayIsMeaner(numberArray1, numberArray2);
 
+/*
+12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.*/
 
+const willBuyDrink = (isHotOutside, moneyInPocket) => {
+let BuyDrink = isHotOutside === true && moneyInPocket >= 10.50
+console.log(BuyDrink);
+return BuyDrink
+}
+willBuyDrink(true, 11)
 
+/*
+13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.*/ 
 
+const willBuyChocolate = (funds, stockInStore, stockAtHome, costOfChocolate) => {
+    let gonnaBuyChocolate = funds >= costOfChocolate && stockInStore === true && stockAtHome === false
+console.log(gonnaBuyChocolate);
+}
+willBuyChocolate(20.00, true, false, 9)
 
+const defendFromLegKick = (incomingLegKick, reactionTime) => {
+    let checkKick = incomingLegKick === true
+    console.log(checkKick, "check that leg kick");
+     
 
-
-
-
-
+}
+defendFromLegKick(true)
