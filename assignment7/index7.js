@@ -208,16 +208,31 @@ willBuyDrink(true, 11)
 /*
 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.*/ 
 
+
 const willBuyChocolate = (funds, stockInStore, stockAtHome, costOfChocolate) => {
+    //created arrow function willBuyChocolate
     let gonnaBuyChocolate = funds >= costOfChocolate && stockInStore === true && stockAtHome === false
-console.log(gonnaBuyChocolate);
+    //set up my conditions in the curly brackets
+    console.log(gonnaBuyChocolate);
+    //logged my result 
 }
 willBuyChocolate(20.00, true, false, 9)
+//passed arguments
 
-const defendFromLegKick = (incomingLegKick) => {
-    let checkKick = incomingLegKick === true
-    console.log(checkKick, "check that leg kick");
-     
 
+const defendFromLegKick = (incomingLegKick, reactionTime) => {
+    //created function defendLegKick
+    if (incomingLegKick && reactionTime){
+//created conditions using if statement
+        console.log("wow what a perfect check! He just broke his leg on your shin!");
+//logged the result if both conditions are true
+        } else if (incomingLegKick === true && reactionTime === false){
+            console.log("oowee! that's gonna hurt for a while!");
+//else if statement and logging a differnet result according to changing arguments
+            } else {
+            console.log("no incoming attack. go on the offensive!");
+            //final else statement and logging second alternative result 
+        }
 }
-defendFromLegKick(true)
+defendFromLegKick(true, true)
+//passing arguments
